@@ -2,7 +2,8 @@
 
 
 - 🔭 I’m currently working on Masaya Bot
-- 🌱 I’m currently learning ... Javascript n Python
+- 🌱 I’m currently learning ... Javascript n Python, looking foward to C#
+- 
 - 📫 How to reach me: briter456@gmail.com
 
 
