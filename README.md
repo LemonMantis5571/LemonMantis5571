@@ -1,8 +1,8 @@
      ### Hi there 👋
 
 
-- 🔭 I’m currently working on "A mess" Visual Novel Game.
-- 🌱 I’m currently learning ... Javascript n Python, looking foward to C#
+- 🔭 I’m currently working on WEB-APPS.
+- 🌱 I’m currently learning ... Javascript n Python, looking foward to NodeJS.
 - 📫 Reach me: briter456@gmail.com
 
 
