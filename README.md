@@ -1,4 +1,4 @@
-     ### Hi there 👋 Taeyeon BIGGEST FAN HERE
+     ### Hi there 👋
 
 
 - 🔭 I’m currently working on WEB-APPS.
