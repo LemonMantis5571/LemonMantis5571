@@ -33,10 +33,10 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LemonMantis5571&theme=discord_old_blurple&hide=C)](https://github.com/anuraghazra/github-readme-stats)
 
 
+ 
+<p align="center">https://user-images.githubusercontent.com/85099589/193505746-5785b9a6-d387-44bf-87d3-3db8959515ee.mp4</p>
 
 
 
-
-https://user-images.githubusercontent.com/85099589/193505746-5785b9a6-d387-44bf-87d3-3db8959515ee.mp4
 
 
