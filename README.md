@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on [Szheduler](https://szheduler-u7qy.vercel.app/)
 
-- 🌱 I’m currently learning **Sass, NodeJS, React.**
+- 🌱 I’m currently learning **Sass, NodeJS, React, Svelte.**
 
 - 👨‍💻 Majority of my Projects available at [https://bit.ly/3inu07r](https://bit.ly/3inu07r)
 
