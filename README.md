@@ -33,7 +33,6 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LemonMantis5571&theme=discord_old_blurple&hide=C)](https://github.com/anuraghazra/github-readme-stats)
 
 
-<p align="center">https://user-images.githubusercontent.com/85099589/201306620-e144fdea-51ed-4f6e-bb30-5772ab710ec6.mp4</p>
 
 
 
