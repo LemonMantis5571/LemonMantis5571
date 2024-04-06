@@ -6,7 +6,7 @@
 ### <div align="center">Full Stack Developer</div>  
   
 
-- ❓ Ask me about anything related to MERN stack.  
+- ❓ Ask me about anything related to T3 stack.  
   
 
 - ⚡ Fun fact: I'm really into k-pop  
