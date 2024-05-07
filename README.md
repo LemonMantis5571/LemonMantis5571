@@ -79,7 +79,8 @@
 ###
 
 <br clear="both">
-  <img height="200" src=" https://media3.giphy.com/media/hKf30NwydJI1hu26B2/200w.gif?cid=6c09b952gwrr1t4v8u3zp5ut0y65kyxo04xqiygdv3hhx19t&ep=v1_gifs_search&rid=200w.gif&ct=g"  />
+  <img align="right" height="600" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDZyZGdrcW5yZzM4a2hiYTRmNGZnMXV1Y2Y4dm5jNHFranQ0eTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hKf30NwydJI1hu26B2/giphy.gif" />
+
  
   <div align="center"><img src="https://spotify-github-profile.vercel.app/api/view?uid=1ozjjjfdi3n4e90eaxulw9x7o&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&bar_color=53b14f&bar_color_cover=false" /></div> 
 
