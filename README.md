@@ -74,14 +74,15 @@
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=LemonMantis5571&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=LemonMantis5571&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LemonMantis5571&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
-</div>
+  <div align="center"><img src="https://spotify-github-profile.vercel.app/api/view?uid=1ozjjjfdi3n4e90eaxulw9x7o&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&bar_color=53b14f&bar_color_cover=false" /></div> 
 
 ###
 
 <br clear="both">
 
-<div align="center"><img src="https://spotify-github-profile.vercel.app/api/view?uid=1ozjjjfdi3n4e90eaxulw9x7o&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&bar_color=53b14f&bar_color_cover=false" /></div> 
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LemonMantis5571&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
+</div>
+
 
 ###
 
