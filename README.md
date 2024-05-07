@@ -6,6 +6,12 @@
 
 ###
 
+<div align="center">
+  <img height="200" src="https://raw.githubusercontent.com/yogesh174/yogesh174/master/img.gif"  />
+</div>
+
+###
+
 <h2 align="left">Socials</h2>
 
 ###
@@ -73,13 +79,10 @@
 
 ###
 
-<img align="left" height="200" src="https://raw.githubusercontent.com/yogesh174/yogesh174/master/img.gif"  />
-
-###
+<br clear="both">
 
 <img src="https://raw.githubusercontent.com/LemonMantis5571/LemonMantis5571/output/snake.svg" alt="Snake animation" />
 
 ###
-
 
 
