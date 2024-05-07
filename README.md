@@ -75,10 +75,8 @@
   <img src="https://github-readme-stats.vercel.app/api?username=LemonMantis5571&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=LemonMantis5571&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
 
-
 ###
   <img align="left" height="200" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDZyZGdrcW5yZzM4a2hiYTRmNGZnMXV1Y2Y4dm5jNHFranQ0eTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hKf30NwydJI1hu26B2/giphy.gif" />
   <div align="center"><img src="https://spotify-github-profile.vercel.app/api/view?uid=1ozjjjfdi3n4e90eaxulw9x7o&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&bar_color=53b14f&bar_color_cover=false" /></div> 
-###
 
 
