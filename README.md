@@ -81,7 +81,7 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/LemonMantis5571/LemonMantis5571/output/snake.svg" alt="Snake animation" />
+<div align="center"><img src="https://spotify-github-profile.vercel.app/api/view?uid=1ozjjjfdi3n4e90eaxulw9x7o&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&bar_color=53b14f&bar_color_cover=false" /></div> 
 
 ###
 
