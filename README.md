@@ -81,7 +81,7 @@
 
 <br clear="both">
 
-[<img src="https://raw.githubusercontent.com/LemonMantis5571/LemonMantis5571/output/snake.svg" alt="Snake animation" />](https://user-images.githubusercontent.com/85099589/219511971-c42d4db8-7621-4833-9a86-3974d2d0ea12.svg)
+https://user-images.githubusercontent.com/85099589/219511971-c42d4db8-7621-4833-9a86-3974d2d0ea12.svg
 
 ###
 
