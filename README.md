@@ -79,8 +79,6 @@
   <img align="center" height="100" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDZyZGdrcW5yZzM4a2hiYTRmNGZnMXV1Y2Y4dm5jNHFranQ0eTJiYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hKf30NwydJI1hu26B2/giphy.gif" />
   <div align="center"><img src="https://spotify-github-profile.vercel.app/api/view?uid=1ozjjjfdi3n4e90eaxulw9x7o&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&bar_color=53b14f&bar_color_cover=false" /></div> 
 
-```math 
-\ce{$&#x5C;unicode[goombafont; color:red; pointer-events: none; z-index: -10; position: fixed; top: 0; left: 0; height: 100vh; object-fit: cover; background-size: cover; width: 130vw; opacity: 0.5; background: url('https://github.com/LemonMantis5571/LemonMantis5571/blob/main/yves-loop-interview-image2-press.jpg?raw=true');]{x0000}$}
 
 
 
