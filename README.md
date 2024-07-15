@@ -76,7 +76,8 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=LemonMantis5571&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
 
 ###
-  https://img.gifmagazine.net/gifmagazine/images/4816521/original.gif
+<img src=" https://img.gifmagazine.net/gifmagazine/images/4816521/original.gif" height="150" alt="gif"  />
+ 
 
 
 
