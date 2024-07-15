@@ -76,8 +76,9 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=LemonMantis5571&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
 
 ###
-<img src="https://img.gifmagazine.net/gifmagazine/images/4816521/original.gif" height="150" alt="gif"  />
- 
+ ![image](https://github.com/user-attachments/assets/32b5244f-4ff0-4050-9ba5-d3c1b98d3d6c)
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=1ozjjjfdi3n4e90eaxulw9x7o&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false)](https://github.com/kittinan/spotify-github-profile)
+
 
 
 
