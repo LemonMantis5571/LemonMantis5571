@@ -80,8 +80,6 @@
 
 ###
 
-
 [[https://spotify-github-profile.kittinanx.com/api/view.svg?uid=1ozjjjfdi3n4e90eaxulw9x7o&redirect=true][https://spotify-github-profile.kittinanx.com/api/view.svg?uid=1ozjjjfdi3n4e90eaxulw9x7o&cover_image=true&theme=novatorem&show_offline=false&background_color=000000&interchange=true&bar_color=09ff00&bar_color_cover=true)]]
-
 
 
