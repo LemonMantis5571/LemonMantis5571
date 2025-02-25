@@ -1,13 +1,15 @@
-<h1 align="center">Developer</h1>
+<h1 align="center">Software Engineer</h1>
 
 ###
 
-<p align="left">❓ Ask me about anything related to T3 stack.<br><br>⚡ Fun fact: I'm really into k-pop</p>
+<p align="left">❓ Ask me about anything related to Web Development.
+<br>
+⚡ Fun fact: Top 100 Gen 5 OU  </p>
 
 ###
 
 <div align="center">
-  <img height="200" src="https://raw.githubusercontent.com/yogesh174/yogesh174/master/img.gif"  />
+  <img height="200" src="https://i.redd.it/0apuqblrhv041.gif"  />
 </div>
 
 ###
@@ -19,9 +21,6 @@
 <div align="center">
   <a href="https://www.linkedin.com/in/leonel-guerrero-12b993246/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/lee.g.v/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
   </a>
 </div>
 
