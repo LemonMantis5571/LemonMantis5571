@@ -8,10 +8,6 @@
 
 ###
 
-<div align="center">
-  <img height="200" src="https://i.redd.it/0apuqblrhv041.gif"  />
-</div>
-
 ###
 
 <h2 align="left">Socials</h2>
