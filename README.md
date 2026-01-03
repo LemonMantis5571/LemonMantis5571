@@ -7,9 +7,9 @@
 ### 🪽 About Me
 **Ethereal solutions for complex problems.** I build performant web applications with a focus on clean architecture and scalable systems.
 
-☁️ **Ask me about:** Web Development, Go microservices, or React patterns.
-🕊️ **Fun Fact:** Top 100 Gen 5 OU.
-✨ **Current Focus:** Optimizing distributed systems and polished UI/UX.
+- ☁️ **Ask me about:** Web Development, Go microservices, or React patterns.
+- 🕊️ **Fun Fact:** Top 100 Gen 5 OU (Weather wars enthusiast).
+- ✨ **Current Focus:** Optimizing distributed systems and polished UI/UX.
 
 ---
 
