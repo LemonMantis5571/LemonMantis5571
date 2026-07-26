@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="687" height="782" viewBox="0 0 687 782" font-family="'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" role="img" aria-label="Animated terminal-style portfolio readout for Leonel Guerrero">
+<title>Leonel Guerrero portfolio readout</title>
+<style>
+text { font-size: 12px; fill: #d0d3da; }
+.dim { fill: #5b5f6b; } .muted { fill: #9aa0ac; } .bright { fill: #eceef2; }
+.pink { fill: #e7a3c6; } .green { fill: #8bd17c; } .cyan { fill: #79c0ff; }
+.fade { opacity: 0; animation: appear 0.01s linear var(--t) forwards; }
+.type { clip-path: inset(0 100% 0 0); animation: typing var(--d) steps(var(--n)) var(--t) forwards; }
+.cursor { fill: #e7a3c6; animation: blink 1.1s step-end var(--t) infinite; }
+@keyframes appear { to { opacity: 1; } }
+@keyframes typing { to { clip-path: inset(0 -2% 0 0); } }
+@keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .fade, .type, .cursor { animation: none; opacity: 1; clip-path: none; }
+}
+</style>
+<rect width="687" height="782" rx="10" fill="#16171d" stroke="#2e303a"/>
+<path d="M0 10 a10 10 0 0 1 10 -10 h667 a10 10 0 0 1 10 10 v24 h-687 z" fill="#1f2027"/>
+<circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+<circle cx="42" cy="17" r="6" fill="#febc2e"/>
+<circle cx="62" cy="17" r="6" fill="#28c840"/>
+<text x="343" y="21" text-anchor="middle" fill="#9aa0ac" font-size="11">terminal — ~/LemonMantis5571</text>
+
+<text x="22" y="65" class="fade" style="--t:0.40s" xml:space="preserve"><tspan class="pink">✻ </tspan><tspan class="bright">Welcome to Leonel's portfolio.</tspan></text>
+<text x="22" y="99" class="type" style="--t:1.00s;--d:2.76s;--n:86" xml:space="preserve"><tspan class="dim">&gt; </tspan><tspan class="bright">Build me a readout of the things I like to build</tspan></text>
+<text x="22" y="116" class="type" style="--t:3.76s;--d:2.88s;--n:89" xml:space="preserve"><tspan class="dim">  </tspan><tspan class="bright">across web apps, developer tools, automation, ML, and games.</tspan></text>
+<text x="22" y="150" class="fade" style="--t:7.00s" xml:space="preserve"><tspan class="pink">● </tspan><tspan>I'll turn the public projects into a portfolio readout.</tspan></text>
+<text x="22" y="167" class="fade" style="--t:7.58s" xml:space="preserve"><tspan class="green">● </tspan><tspan class="bright">portfolio-smi</tspan><tspan class="muted"> (public-projects)</tspan></text>
+<text x="22" y="184" class="fade" style="--t:7.98s" xml:space="preserve"><tspan class="dim">  ⎿  </tspan><tspan class="muted">Rendering current projects…</tspan></text>
+
+<text x="22" y="218" class="fade" style="--t:8.38s" xml:space="preserve"><tspan class="dim">+---------------------------------------------------------------------------------------+</tspan></text>
+<text x="22" y="235" class="fade" style="--t:8.47s" xml:space="preserve"><tspan class="dim">|</tspan><tspan> LEONEL-GUERRERO-SMI 2026.07   Runtime: human-powered   Focus: shipping             </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="252" class="fade" style="--t:8.56s" xml:space="preserve"><tspan class="dim">|-----------------------------------------+----------------------+----------------------|</tspan></text>
+<text x="22" y="269" class="fade" style="--t:8.65s" xml:space="preserve"><tspan class="dim">|</tspan><tspan> Idx  Project                    </tspan><tspan class="dim">|</tspan><tspan> Stack                </tspan><tspan class="dim">|</tspan><tspan> Mode                 </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="286" class="fade" style="--t:8.74s" xml:space="preserve"><tspan class="dim">|=========================================+======================+======================|</tspan></text>
+
+<text x="22" y="303" class="fade" style="--t:8.84s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   0  </tspan><tspan class="green">Git-AutoCommit             </tspan><tspan class="dim">|</tspan><tspan> Python + Gemini      </tspan><tspan class="dim">|</tspan><tspan> AI commit tooling    </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="320" class="fade" style="--t:8.93s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   1  </tspan><tspan class="green">Aero-Webring               </tspan><tspan class="dim">|</tspan><tspan> React + Vite         </tspan><tspan class="dim">|</tspan><tspan> Web / UI             </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="337" class="fade" style="--t:9.02s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   2  </tspan><tspan class="green">MCP-Discord-Image...      </tspan><tspan class="dim">|</tspan><tspan> Python + MCP         </tspan><tspan class="dim">|</tspan><tspan> Automation           </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="354" class="fade" style="--t:9.11s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   3  </tspan><tspan class="green">Moodle-Skill              </tspan><tspan class="dim">|</tspan><tspan> Docs + agents        </tspan><tspan class="dim">|</tspan><tspan> Tool contracts       </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="371" class="fade" style="--t:9.20s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   4  </tspan><tspan class="green">Pokemon-ImageClassifier   </tspan><tspan class="dim">|</tspan><tspan> PyTorch + ResNet-50  </tspan><tspan class="dim">|</tspan><tspan> ML experiment        </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="388" class="fade" style="--t:9.29s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   5  </tspan><tspan class="green">PokeMMO-OU-Stats          </tspan><tspan class="dim">|</tspan><tspan> Java + data          </tspan><tspan class="dim">|</tspan><tspan> Stats pipeline       </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="405" class="fade" style="--t:9.38s" xml:space="preserve"><tspan class="dim">+---------------------------------------------------------------------------------------+</tspan></text>
+
+<text x="22" y="439" class="fade" style="--t:9.56s" xml:space="preserve"><tspan class="dim">+---------------------------------------------------------------------------------------+</tspan></text>
+<text x="22" y="456" class="fade" style="--t:9.65s" xml:space="preserve"><tspan class="dim">|</tspan><tspan> Highlights (tidbits):                                                               </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="473" class="fade" style="--t:9.74s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   0001   web     Aero-Webring -- Frutiger Aero interfaces and forkable site templates </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="490" class="fade" style="--t:9.83s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   0002   ai      Git-AutoCommit -- conventional commit messages with Gemini         </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="507" class="fade" style="--t:9.92s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   0007   mcp     Discord image downloads through the Model Context Protocol       </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="524" class="fade" style="--t:10.01s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   0042   ml      Pokemon type classification with transfer learning                </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="541" class="fade" style="--t:10.10s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   1337   game    PokeMMO tools, a card simulator, and a visual-novel project       </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="558" class="fade" style="--t:10.19s" xml:space="preserve"><tspan class="dim">|</tspan><tspan>   9001   meta    this README -- made to feel like a terminal, naturally            </tspan><tspan class="dim">|</tspan></text>
+<text x="22" y="575" class="fade" style="--t:10.28s" xml:space="preserve"><tspan class="dim">+---------------------------------------------------------------------------------------+</tspan></text>
+
+<text x="22" y="626" class="fade" style="--t:10.58s" xml:space="preserve"><tspan class="pink">● </tspan><tspan>Readout complete. Built with </tspan><tspan class="cyan">TypeScript</tspan><tspan>, </tspan><tspan class="cyan">Python</tspan><tspan>, </tspan><tspan class="cyan">Go</tspan><tspan>, </tspan><tspan class="cyan">ML</tspan><tspan>, and curiosity.</tspan></text>
+<text x="22" y="660" class="fade" style="--t:10.86s" xml:space="preserve"><tspan class="green">● </tspan><tspan>Find the code at </tspan><tspan class="cyan">github.com/LemonMantis5571</tspan></text>
+<text x="22" y="694" class="fade" style="--t:11.14s" xml:space="preserve"><tspan class="dim">&gt; </tspan><tspan class="cursor">▋</tspan></text>
+</svg>
