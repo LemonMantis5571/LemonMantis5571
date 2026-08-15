@@ -1,204 +1,180 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" role="img" aria-labelledby="win7-terminal-title win7-terminal-description">
-<title id="win7-terminal-title">Leonel Guerrero's Windows 7 terminal portfolio</title>
-<desc id="win7-terminal-description">An animated Windows 7-style glass command prompt with sky, water, and Leonel Guerrero's public projects.</desc>
-<style>
-  text { font-family: 'Segoe UI', 'Trebuchet MS', Arial, sans-serif; fill: #e9fbff; }
-  .term { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 11px; }
-  .term-small { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 10px; }
-  .term-dim { fill: #83b8c9; }
-  .term-muted { fill: #afd3dc; }
-  .term-white { fill: #f5ffff; }
-  .term-blue { fill: #a9edff; }
-  .term-green { fill: #b0ffc0; }
-  .term-pink { fill: #ffd7e8; }
-  .term-yellow { fill: #fff0ad; }
-  .fade { opacity: 0; animation: appear 0.01s linear var(--t) forwards; }
-  .type { clip-path: inset(0 100% 0 0); animation: typing var(--d) steps(var(--n)) var(--t) forwards; }
-  .cursor { fill: #a9edff; animation: blink 1.1s step-end var(--t) infinite; }
-  .win7-cloud { animation: cloud-drift 12s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
-  .win7-cloud-right { animation-delay: -5s; animation-duration: 15s; }
-  .win7-bubble { animation: bubble-rise var(--d) ease-in-out var(--t) infinite; }
-  .win7-water-line { animation: water-shimmer 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-  .win7-sun { animation: sun-pulse 4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-  .win7-reflection { animation: reflection-sweep 5s ease-in-out infinite; }
-  .win7-action { transition: transform 180ms ease, filter 180ms ease; transform-box: fill-box; transform-origin: center; }
-  a:hover .win7-action, a:focus .win7-action { transform: translateY(-2px); filter: url(#win7-glow); }
-  @keyframes appear { to { opacity: 1; } }
-  @keyframes typing { to { clip-path: inset(0 -2% 0 0); } }
-  @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
-  @keyframes cloud-drift { from { transform: translateX(-7px); } to { transform: translateX(9px); } }
-  @keyframes bubble-rise { 0% { opacity: 0; transform: translateY(18px) scale(0.8); } 15% { opacity: 0.72; } 100% { opacity: 0; transform: translateY(-76px) scale(1.12); } }
-  @keyframes water-shimmer { 0%, 100% { opacity: 0.35; transform: translateX(-5px); } 50% { opacity: 0.85; transform: translateX(7px); } }
-  @keyframes sun-pulse { 0%, 100% { opacity: 0.78; transform: scale(0.94); } 50% { opacity: 1; transform: scale(1.08); } }
-  @keyframes reflection-sweep { 0%, 20% { opacity: 0.05; transform: translateX(-16px); } 60%, 100% { opacity: 0.46; transform: translateX(20px); } }
-  @media (prefers-reduced-motion: reduce) {
-    .fade, .type, .cursor, .win7-cloud, .win7-bubble, .win7-water-line, .win7-sun, .win7-reflection { animation: none; opacity: 1; clip-path: none; }
-    .win7-action { transition: none; }
-  }
-</style>
-<defs>
-  <linearGradient id="win7-sky" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#efffff"/>
-    <stop offset="0.42" stop-color="#91e8ff"/>
-    <stop offset="1" stop-color="#5596e0"/>
-  </linearGradient>
-  <linearGradient id="win7-hill" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#e1ffd9"/>
-    <stop offset="0.5" stop-color="#83dfa0"/>
-    <stop offset="1" stop-color="#269479"/>
-  </linearGradient>
-  <linearGradient id="win7-water" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#61dce5"/>
-    <stop offset="1" stop-color="#2870b4"/>
-  </linearGradient>
-  <linearGradient id="win7-frame" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#ffffff" stop-opacity="0.86"/>
-    <stop offset="0.44" stop-color="#d7f6ff" stop-opacity="0.42"/>
-    <stop offset="1" stop-color="#77bee5" stop-opacity="0.56"/>
-  </linearGradient>
-  <linearGradient id="win7-titlebar" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#e9fbff" stop-opacity="0.94"/>
-    <stop offset="0.25" stop-color="#94e2f4" stop-opacity="0.92"/>
-    <stop offset="0.58" stop-color="#4d9dce" stop-opacity="0.95"/>
-    <stop offset="1" stop-color="#1b619e" stop-opacity="0.98"/>
-  </linearGradient>
-  <linearGradient id="win7-terminal" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#145b77" stop-opacity="0.96"/>
-    <stop offset="0.48" stop-color="#0a4168" stop-opacity="0.96"/>
-    <stop offset="1" stop-color="#062b53" stop-opacity="0.98"/>
-  </linearGradient>
-  <linearGradient id="win7-pane" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#03294d" stop-opacity="0.7"/>
-    <stop offset="1" stop-color="#001b38" stop-opacity="0.68"/>
-  </linearGradient>
-  <linearGradient id="win7-button" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#ffffff" stop-opacity="0.96"/>
-    <stop offset="0.45" stop-color="#e6f4fb" stop-opacity="0.94"/>
-    <stop offset="1" stop-color="#b7d5e7" stop-opacity="0.96"/>
-  </linearGradient>
-  <radialGradient id="win7-sun" cx="32%" cy="28%" r="72%">
-    <stop offset="0" stop-color="#ffffff"/>
-    <stop offset="0.32" stop-color="#fffbd8"/>
-    <stop offset="0.76" stop-color="#ffd65c"/>
-    <stop offset="1" stop-color="#ff9d5a"/>
-  </radialGradient>
-  <filter id="win7-shadow" x="-25%" y="-25%" width="150%" height="175%">
-    <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#125477" flood-opacity="0.34"/>
-  </filter>
-  <filter id="win7-glow" x="-35%" y="-35%" width="170%" height="190%">
-    <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#a9edff" flood-opacity="0.78"/>
-  </filter>
-  <filter id="win7-sun-glow" x="-100%" y="-100%" width="300%" height="300%">
-    <feGaussianBlur stdDeviation="10" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <clipPath id="win7-scene-clip"><rect x="16" y="16" width="688" height="788" rx="8"/></clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 820" role="img" aria-labelledby="win7-title win7-desc">
+  <title id="win7-title">Leonel Guerrero's Windows 7 terminal portfolio</title>
+  <desc id="win7-desc">A readable Windows 7 style command prompt showing Leonel Guerrero's public projects and portfolio links.</desc>
 
-<rect width="720" height="820" rx="14" fill="#dffaff"/>
-<g clip-path="url(#win7-scene-clip)">
-  <rect x="16" y="16" width="688" height="788" fill="url(#win7-sky)"/>
-  <circle class="win7-sun" cx="614" cy="68" r="38" fill="url(#win7-sun)" filter="url(#win7-sun-glow)"/>
-  <path d="M602 57c7-8 17-10 26-7" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-opacity="0.9"/>
-  <g class="win7-cloud" fill="#ffffff" fill-opacity="0.76">
-    <ellipse cx="123" cy="78" rx="58" ry="15"/>
-    <ellipse cx="86" cy="78" rx="25" ry="20"/>
-    <ellipse cx="133" cy="68" rx="29" ry="27"/>
-    <ellipse cx="169" cy="80" rx="31" ry="16"/>
+  <style>
+    text { font-family: "Segoe UI", "SegoeUI", "Noto Sans", sans-serif; fill: #000000; }
+    .terminal { font-family: Consolas, "Courier New", monospace; font-size: 10.5px; fill: #ffffff; }
+    .terminal-small { font-family: Consolas, "Courier New", monospace; font-size: 9.5px; fill: #ffffff; }
+    .terminal-blue { fill: #aaddfa; }
+    .terminal-surface { fill: #f0f0f0; }
+    .terminal-muted { fill: #cfcfcf; }
+    .terminal-selected { fill: #000000; }
+    .ui { font-size: 11px; }
+    .ui-muted { font-size: 10px; fill: #838383; }
+    .w7-button-label { font-size: 11px; }
+    .w7-button-rect { transition: filter 120ms ease; }
+    a:hover .w7-button-rect, a:focus .w7-button-rect { fill: url(#w7-button-hover); filter: url(#w7-glow); }
+    a:active .w7-button-rect { fill: url(#w7-button-active); }
+    .blink { animation: blink 1.1s step-end infinite; }
+    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .blink { animation: none; } }
+  </style>
+
+  <defs>
+    <!-- 7.css window palette: --w7-w-bg, --w7-w-grad, --w7-w-bd -->
+    <linearGradient id="w7-window-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="w7-titlebar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="w7-control" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="0.75" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="w7-button" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.45" stop-color="#f2f2f2"/>
+      <stop offset="0.45" stop-color="#ebebeb"/>
+      <stop offset="1" stop-color="#cfcfcf"/>
+    </linearGradient>
+    <linearGradient id="w7-button-hover" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.45" stop-color="#eaf6fd"/>
+      <stop offset="0.45" stop-color="#bee6fd"/>
+      <stop offset="1" stop-color="#a7d9f5"/>
+    </linearGradient>
+    <linearGradient id="w7-button-active" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.3" stop-color="#e5f4fc"/>
+      <stop offset="0.5" stop-color="#c4e5f6"/>
+      <stop offset="0.5" stop-color="#98d1ef"/>
+      <stop offset="1" stop-color="#68b3db"/>
+    </linearGradient>
+    <linearGradient id="w7-close" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0a197" stop-opacity="0.9"/>
+      <stop offset="0.25" stop-color="#cf796a"/>
+      <stop offset="0.5" stop-color="#cf796a"/>
+      <stop offset="0.5" stop-color="#d54f36"/>
+      <stop offset="1" stop-color="#d54f36"/>
+    </linearGradient>
+    <linearGradient id="w7-close-hover" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fb9d8b"/>
+      <stop offset="0.25" stop-color="#ee6d56"/>
+      <stop offset="0.5" stop-color="#ee6d56"/>
+      <stop offset="0.5" stop-color="#d42809"/>
+      <stop offset="1" stop-color="#d42809"/>
+    </linearGradient>
+    <filter id="w7-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="2" dy="2" stdDeviation="8" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+    <filter id="w7-glow" x="-30%" y="-50%" width="160%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#2aceda" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Desktop-sized canvas and the 7.css window frame. -->
+  <rect width="720" height="820" fill="#f0f0f0"/>
+  <rect x="10" y="10" width="700" height="800" rx="6" fill="#4580c4" stroke="#000000" stroke-opacity="0.7" filter="url(#w7-shadow)"/>
+  <rect x="11" y="11" width="698" height="798" rx="5" fill="url(#w7-window-grad)"/>
+  <path d="M16 166h688v40H16Z" fill="#ffffff" fill-opacity="0.7"/>
+  <rect x="16" y="16" width="688" height="788" rx="6" fill="none" stroke="#ffffff" stroke-opacity="0.87"/>
+
+  <!-- 7.css title bar: #4580c4, #000000b3, white inset highlight. -->
+  <rect x="18" y="18" width="684" height="58" rx="6" fill="#4580c4" stroke="#000000" stroke-opacity="0.7"/>
+  <rect x="19" y="19" width="682" height="56" rx="5" fill="url(#w7-titlebar)"/>
+  <rect x="20" y="20" width="680" height="54" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.6"/>
+
+  <rect x="32" y="35" width="18" height="18" rx="2" fill="#3c7fb1" stroke="#ffffff" stroke-opacity="0.8"/>
+  <path d="M36 44h10M41 39v10" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="60" y="54" font-size="12" fill="#000000" stroke="#ffffff" stroke-opacity="0.65" stroke-width="2" paint-order="stroke">Command Prompt — C:\Users\Leonel\portfolio</text>
+
+  <!-- Window controls use the exact 7.css normal and close gradients. -->
+  <g>
+    <rect x="576" y="28" width="29" height="25" rx="5" fill="url(#w7-control)" stroke="#000000" stroke-opacity="0.3"/>
+    <rect x="577" y="29" width="27" height="23" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.6"/>
+    <path d="M585 47h11" stroke="#000000" stroke-width="1.4" stroke-linecap="round"/>
+
+    <rect x="605" y="28" width="29" height="25" rx="5" fill="url(#w7-control)" stroke="#000000" stroke-opacity="0.3"/>
+    <rect x="606" y="29" width="27" height="23" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.6"/>
+    <rect x="614" y="37" width="11" height="9" fill="none" stroke="#000000" stroke-width="1.4"/>
+
+    <rect x="634" y="28" width="48" height="25" rx="5" fill="url(#w7-close)" stroke="#000000" stroke-opacity="0.3"/>
+    <rect x="635" y="29" width="46" height="23" rx="4" fill="none" stroke="#ffffff" stroke-opacity="0.5"/>
+    <path d="M651 36l14 11M665 36l-14 11" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
   </g>
-  <g class="win7-cloud win7-cloud-right" fill="#ffffff" fill-opacity="0.56">
-    <ellipse cx="478" cy="146" rx="50" ry="13"/>
-    <ellipse cx="447" cy="147" rx="23" ry="18"/>
-    <ellipse cx="495" cy="138" rx="27" ry="23"/>
-    <ellipse cx="528" cy="149" rx="25" ry="14"/>
-  </g>
-  <path d="M0 452c82-55 155-45 232-12 63 27 111-48 178-29 73 21 105 63 172 31 52-25 87-27 138-3v365H0Z" fill="url(#win7-hill)" fill-opacity="0.82"/>
-  <path d="M0 579c90-32 166-20 246 8 66 23 118-10 181-10 70 0 104 27 177 9 45-12 70-19 116-9v227H0Z" fill="url(#win7-water)"/>
-  <g class="win7-water-line" fill="none" stroke="#dcffff" stroke-linecap="round">
-    <path d="M40 651c73-17 132-16 194 1" stroke-width="4" stroke-opacity="0.54"/>
-    <path d="M427 631c76-18 143-16 211 2" stroke-width="4" stroke-opacity="0.48"/>
-    <path d="M92 746c54-12 111-11 162 1" stroke-width="3" stroke-opacity="0.36"/>
-    <path d="M496 718c49-11 93-10 141 1" stroke-width="3" stroke-opacity="0.38"/>
-  </g>
-  <g fill="#ffffff">
-    <circle class="win7-bubble" style="--d:7s;--t:-1s" cx="69" cy="460" r="5" fill-opacity="0.72"/>
-    <circle class="win7-bubble" style="--d:8s;--t:-4s" cx="87" cy="441" r="3" fill-opacity="0.56"/>
-    <circle class="win7-bubble" style="--d:6s;--t:-2s" cx="654" cy="474" r="5" fill-opacity="0.66"/>
-    <circle class="win7-bubble" style="--d:9s;--t:-5s" cx="674" cy="452" r="3" fill-opacity="0.5"/>
-  </g>
-</g>
 
-<rect x="16" y="16" width="688" height="788" rx="8" fill="url(#win7-frame)" stroke="#ffffff" stroke-opacity="0.94" stroke-width="2" filter="url(#win7-shadow)"/>
-<path d="M24 24h672v54H24Z" fill="url(#win7-titlebar)" stroke="#ffffff" stroke-opacity="0.72"/>
-<path d="M27 27h666" stroke="#ffffff" stroke-opacity="0.72"/>
-<path d="M24 77h672" stroke="#0c4d83" stroke-opacity="0.56"/>
+  <!-- 7.css window body and status surfaces. -->
+  <rect x="24" y="76" width="672" height="720" fill="#f0f0f0" stroke="#000000" stroke-opacity="0.7"/>
+  <rect x="25" y="77" width="670" height="718" fill="none" stroke="#ffffff" stroke-opacity="0.6"/>
 
-<rect x="34" y="36" width="17" height="17" rx="2" fill="#0d5d88" stroke="#d9fbff" stroke-opacity="0.8"/>
-<path d="M38 45h9M42.5 40.5v9" stroke="#eaffff" stroke-width="1.5" stroke-linecap="round"/>
-<text x="60" y="50" font-size="12" font-weight="600" fill="#ffffff">Command Prompt — C:\Users\Leonel\portfolio</text>
+  <rect x="42" y="94" width="636" height="28" fill="url(#w7-button)" stroke="#8e8f8f"/>
+  <rect x="43" y="95" width="634" height="26" fill="none" stroke="#ffffff" stroke-opacity="0.7"/>
+  <text x="52" y="113" class="ui">C:\Users\Leonel\portfolio</text>
+  <text x="668" y="113" text-anchor="end" class="ui-muted">Windows 7 profile shell</text>
 
-<g class="win7-controls">
-  <rect x="575" y="31" width="31" height="23" rx="2" fill="#dff8ff" fill-opacity="0.28" stroke="#ffffff" stroke-opacity="0.52"/>
-  <path d="M585 48h11" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
-  <rect x="608" y="31" width="31" height="23" rx="2" fill="#dff8ff" fill-opacity="0.28" stroke="#ffffff" stroke-opacity="0.52"/>
-  <rect x="618" y="39" width="11" height="9" fill="none" stroke="#ffffff" stroke-width="1.4"/>
-  <rect x="641" y="31" width="43" height="23" rx="2" fill="#d86675" fill-opacity="0.9" stroke="#ffffff" stroke-opacity="0.58"/>
-  <path d="M655 38l14 10M669 38l-14 10" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
-</g>
+  <!-- High-contrast console content so the terminal remains readable. -->
+  <rect x="42" y="134" width="636" height="430" fill="#000000" stroke="#8e8f8f"/>
+  <rect x="43" y="135" width="634" height="428" fill="none" stroke="#ffffff" stroke-opacity="0.35"/>
+  <text x="58" y="164" class="terminal"><tspan class="terminal-blue">Microsoft Windows [Version 7.0]</tspan></text>
+  <text x="58" y="185" class="terminal">C:\Users\Leonel\portfolio&gt; portfolio-smi --theme=win7 --projects=public</text>
+  <text x="58" y="206" class="terminal"><tspan class="terminal-blue">[OK]</tspan><tspan> Welcome to Leonel's portfolio.</tspan></text>
+  <text x="58" y="227" class="terminal"><tspan class="terminal-blue">[OK]</tspan><tspan> web apps, developer tools, automation, ML, and games.</tspan></text>
+  <text x="58" y="248" class="terminal"><tspan class="terminal-blue">[OK]</tspan><tspan> readout online · human-powered runtime</tspan></text>
+  <path d="M58 260h600" stroke="#ffffff" stroke-opacity="0.5" stroke-dasharray="4 4"/>
 
-<rect x="32" y="76" width="656" height="718" rx="5" fill="url(#win7-terminal)" stroke="#d4f8ff" stroke-opacity="0.84" stroke-width="1.5"/>
-<path d="M35 80h650v72c-110-29-235-21-356-4-116 16-208 12-294-18Z" fill="#ffffff" fill-opacity="0.08"/>
-<path class="win7-reflection" d="M55 84h170l116 682H170Z" fill="#ffffff" fill-opacity="0.11"/>
+  <text x="58" y="281" class="terminal-small"><tspan class="terminal-blue">IDX</tspan><tspan x="92" class="terminal-blue">PROJECT</tspan><tspan x="320" class="terminal-blue">STACK</tspan><tspan x="472" class="terminal-blue">MODE</tspan></text>
+  <path d="M58 290h600" stroke="#ffffff" stroke-opacity="0.7"/>
 
-<text x="52" y="111" class="term term-blue fade" style="--t:0.25s"><tspan>user@win7:~$ </tspan><tspan class="term-white">portfolio-smi --theme=win7 --projects=public</tspan></text>
-<text x="52" y="137" class="term term-white fade" style="--t:0.62s"><tspan class="term-pink">✻ </tspan><tspan>Welcome to Leonel's portfolio.</tspan></text>
-<text x="52" y="161" class="term term-white type" style="--t:0.98s;--d:1.66s;--n:57"><tspan class="term-dim">  › </tspan><tspan>web apps, dev tools, automation, ML, and games.</tspan></text>
-<text x="52" y="185" class="term term-muted fade" style="--t:2.85s"><tspan class="term-green">  ● </tspan><tspan>readout online · sunny desktop · human-powered runtime</tspan></text>
+  <text x="58" y="310" class="terminal-small"><tspan>0</tspan><tspan x="92" class="terminal-blue">Git-AutoCommit</tspan><tspan x="320">Python + Gemini</tspan><tspan x="472">AI tooling</tspan></text>
+  <rect x="52" y="318" width="616" height="21" fill="#aaddfa"/>
+  <text x="58" y="333" class="terminal-small terminal-selected"><tspan>1</tspan><tspan x="92">Webring</tspan><tspan x="320">React + Vite</tspan><tspan x="472">Web / UI</tspan></text>
+  <text x="58" y="357" class="terminal-small"><tspan>2</tspan><tspan x="92" class="terminal-blue">MCP-Discord-Image...</tspan><tspan x="320">Python + MCP</tspan><tspan x="472">Automation</tspan></text>
+  <text x="58" y="381" class="terminal-small"><tspan>3</tspan><tspan x="92" class="terminal-blue">Moodle-Skill</tspan><tspan x="320">Docs + agents</tspan><tspan x="472">Contracts</tspan></text>
+  <text x="58" y="405" class="terminal-small"><tspan>4</tspan><tspan x="92" class="terminal-blue">Pokemon-ImageClassifier</tspan><tspan x="320">PyTorch + ResNet</tspan><tspan x="472">ML lab</tspan></text>
+  <text x="58" y="429" class="terminal-small"><tspan>5</tspan><tspan x="92" class="terminal-blue">PokeMMO-UI-Stats</tspan><tspan x="320">Java + data</tspan><tspan x="472">Stats</tspan></text>
+  <text x="58" y="453" class="terminal-small"><tspan>6</tspan><tspan x="92" class="terminal-blue">LimeBot-OS</tspan><tspan x="320">Python + AI</tspan><tspan x="472">Assistant</tspan></text>
+  <text x="58" y="477" class="terminal-small"><tspan>7</tspan><tspan x="92" class="terminal-blue">SilentFail</tspan><tspan x="320">TypeScript + Next</tspan><tspan x="472">Monitoring</tspan></text>
+  <text x="58" y="501" class="terminal-small"><tspan>8</tspan><tspan x="92" class="terminal-blue">Ethereal-Theme</tspan><tspan x="320">JS + VS Code</tspan><tspan x="472">TUI themes</tspan></text>
+  <path d="M58 517h600" stroke="#ffffff" stroke-opacity="0.5" stroke-dasharray="4 4"/>
+  <text x="58" y="538" class="terminal-small"><tspan class="terminal-blue">STATUS:</tspan><tspan> 9 public repositories · links ready</tspan><tspan class="blink">_</tspan></text>
 
-<rect x="52" y="202" width="616" height="30" rx="3" fill="#dffaff" fill-opacity="0.13" stroke="#b9f5ff" stroke-opacity="0.38"/>
-<path d="M53 203h614" stroke="#ffffff" stroke-opacity="0.32"/>
-<text x="68" y="222" class="term-small"><tspan class="term-blue">STATUS</tspan><tspan x="139" class="term-white">Windows 7 skin · clear skies · 9 public islands</tspan><tspan x="654" text-anchor="end" class="term-green">● connected</tspan></text>
+  <!-- 7.css status-bar surface. -->
+  <rect x="42" y="580" width="636" height="38" fill="#f0f0f0" stroke="#000000" stroke-opacity="0.7"/>
+  <path d="M43 581h634" stroke="#ffffff" stroke-opacity="0.6"/>
+  <path d="M177 581v36M390 581v36M558 581v36" stroke="#cfcfcf"/>
+  <text x="52" y="603" class="ui">STATUS</text>
+  <text x="190" y="603" class="ui-muted">Windows 7 skin</text>
+  <text x="402" y="603" class="ui-muted">clear skies</text>
+  <text x="570" y="603" class="ui-muted">connected</text>
 
-<rect x="52" y="246" width="616" height="296" rx="3" fill="url(#win7-pane)" stroke="#a9edff" stroke-opacity="0.32"/>
-<path d="M53 247h614" stroke="#ffffff" stroke-opacity="0.22"/>
-<text x="68" y="270" class="term-small term-dim fade" style="--t:3.15s">+------------------------------------------------------------------+</text>
-<text x="68" y="288" class="term-small fade" style="--t:3.24s"><tspan class="term-dim">| </tspan><tspan class="term-blue">LEONEL-GUERRERO-SMI 2026.08</tspan><tspan x="382" class="term-muted">runtime: human-powered</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="306" class="term-small term-dim fade" style="--t:3.33s">|------------------------------------------------------------------|</text>
-<text x="68" y="324" class="term-small fade" style="--t:3.42s"><tspan class="term-dim">| </tspan><tspan class="term-white">Idx</tspan><tspan x="101" class="term-white">Project</tspan><tspan x="329" class="term-white">Stack</tspan><tspan x="477" class="term-white">Mode</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="342" class="term-small term-dim fade" style="--t:3.51s">|==================================================================|</text>
-<text x="68" y="362" class="term-small fade" style="--t:3.62s"><tspan class="term-dim">| </tspan><tspan>0</tspan><tspan x="101" class="term-green">Git-AutoCommit</tspan><tspan x="329" class="term-blue">Python + Gemini</tspan><tspan x="477" class="term-muted">AI tooling</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="382" class="term-small fade" style="--t:3.72s"><tspan class="term-dim">| </tspan><tspan>1</tspan><tspan x="101" class="term-green">Webring</tspan><tspan x="329" class="term-blue">React + Vite</tspan><tspan x="477" class="term-muted">Web / UI</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="402" class="term-small fade" style="--t:3.82s"><tspan class="term-dim">| </tspan><tspan>2</tspan><tspan x="101" class="term-green">MCP-Discord-Image...</tspan><tspan x="329" class="term-blue">Python + MCP</tspan><tspan x="477" class="term-muted">Automation</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="422" class="term-small fade" style="--t:3.92s"><tspan class="term-dim">| </tspan><tspan>3</tspan><tspan x="101" class="term-green">Moodle-Skill</tspan><tspan x="329" class="term-blue">Docs + agents</tspan><tspan x="477" class="term-muted">Contracts</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="442" class="term-small fade" style="--t:4.02s"><tspan class="term-dim">| </tspan><tspan>4</tspan><tspan x="101" class="term-green">Pokemon-ImageClassifier</tspan><tspan x="329" class="term-blue">PyTorch + ResNet</tspan><tspan x="477" class="term-muted">ML lab</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="462" class="term-small fade" style="--t:4.12s"><tspan class="term-dim">| </tspan><tspan>5</tspan><tspan x="101" class="term-green">PokeMMO-OU-Stats</tspan><tspan x="329" class="term-blue">Java + data</tspan><tspan x="477" class="term-muted">Stats</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="482" class="term-small fade" style="--t:4.22s"><tspan class="term-dim">| </tspan><tspan>6</tspan><tspan x="101" class="term-green">LimeBot-OS</tspan><tspan x="329" class="term-blue">Python + AI</tspan><tspan x="477" class="term-muted">Assistant</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="502" class="term-small fade" style="--t:4.32s"><tspan class="term-dim">| </tspan><tspan>7</tspan><tspan x="101" class="term-green">SilentFail</tspan><tspan x="329" class="term-blue">TypeScript + Next</tspan><tspan x="477" class="term-muted">Monitoring</tspan><tspan x="654" class="term-dim">|</tspan></text>
-<text x="68" y="522" class="term-small fade" style="--t:4.42s"><tspan class="term-dim">| </tspan><tspan>8</tspan><tspan x="101" class="term-green">Ethereal-Theme</tspan><tspan x="329" class="term-blue">JS + VS Code</tspan><tspan x="477" class="term-muted">TUI themes</tspan><tspan x="654" class="term-dim">|</tspan></text>
+  <!-- 7.css button gradients; these links are the interactive part of the SVG. -->
+  <a href="https://www.leonelmantis.dev" aria-label="Open portfolio">
+    <rect class="w7-button-rect" x="42" y="638" width="154" height="30" rx="3" fill="url(#w7-button)" stroke="#8e8f8f"/>
+    <rect x="43" y="639" width="152" height="28" rx="2" fill="none" stroke="#ffffff" stroke-opacity="0.75"/>
+    <text x="119" y="657" text-anchor="middle" class="w7-button-label">Open portfolio</text>
+  </a>
+  <a href="https://github.com/LemonMantis5571?tab=repositories" aria-label="Browse repositories">
+    <rect class="w7-button-rect" x="207" y="638" width="174" height="30" rx="3" fill="url(#w7-button)" stroke="#8e8f8f"/>
+    <rect x="208" y="639" width="172" height="28" rx="2" fill="none" stroke="#ffffff" stroke-opacity="0.75"/>
+    <text x="294" y="657" text-anchor="middle" class="w7-button-label">Browse repositories</text>
+  </a>
+  <a href="https://github.com/Ethereal-Lemons" aria-label="Open Ethereal Lemons projects">
+    <rect class="w7-button-rect" x="392" y="638" width="174" height="30" rx="3" fill="url(#w7-button)" stroke="#8e8f8f"/>
+    <rect x="393" y="639" width="172" height="28" rx="2" fill="none" stroke="#ffffff" stroke-opacity="0.75"/>
+    <text x="479" y="657" text-anchor="middle" class="w7-button-label">Ethereal-Lemons</text>
+  </a>
 
-<rect x="52" y="559" width="616" height="132" rx="3" fill="#031f42" fill-opacity="0.52" stroke="#a9edff" stroke-opacity="0.26"/>
-<path d="M53 560h614" stroke="#ffffff" stroke-opacity="0.2"/>
-<text x="68" y="584" class="term-small term-dim fade" style="--t:4.68s">+ HIGHLIGHTS / SIGNALS FROM THE CLOUD</text>
-<text x="68" y="607" class="term-small fade" style="--t:4.8s"><tspan class="term-green">[WEB ] </tspan><tspan class="term-white">Webring</tspan><tspan class="term-muted"> — Windows 7 interfaces and forkable templates</tspan></text>
-<text x="68" y="628" class="term-small fade" style="--t:4.92s"><tspan class="term-blue">[AI  ] </tspan><tspan class="term-white">Git-AutoCommit</tspan><tspan class="term-muted"> — conventional commits with Gemini</tspan></text>
-<text x="68" y="649" class="term-small fade" style="--t:5.04s"><tspan class="term-pink">[ML  ] </tspan><tspan class="term-white">Pokemon classifier</tspan><tspan class="term-muted"> — transfer learning experiments</tspan></text>
-<text x="68" y="670" class="term-small fade" style="--t:5.16s"><tspan class="term-yellow">[GAME] </tspan><tspan class="term-white">PokeMMO tools</tspan><tspan class="term-muted"> — stats, cards, and visual-novel systems</tspan></text>
-
-<text x="52" y="720" class="term-small fade" style="--t:5.44s"><tspan class="term-green">● </tspan><tspan class="term-white">readout complete</tspan><tspan class="term-muted"> · built with TypeScript · Python · Go · ML · curiosity</tspan></text>
-
-<a href="https://www.lemonmantis.dev" target="_blank" rel="noreferrer" aria-label="Open Leonel Guerrero's portfolio">
-  <g class="win7-action" transform="translate(52 737)">
-    <rect width="190" height="27" rx="3" fill="url(#win7-button)" stroke="#6b9ab8" stroke-width="1"/>
-    <path d="M54 738h186" stroke="#ffffff" stroke-opacity="0.9"/>
-    <text x="95" y="18" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#0b4772">Open portfolio</text>
-  </g>
-</a>
-<a href="https://github.com/LemonMantis5571?tab=repositories" target="_blank" rel="noreferrer" aria-label="Browse Leonel Guerrero's repositories">
-  <g class="win7-action" transform="translate(252 737)">
-    <rect width="190" height="27" rx="3" fill="url(#win7-button)" stroke="#6b9ab8" stroke-width="1"/>
-    <path d="M254 738h186" stroke="#ffffff" stroke-opacity="0.9"/>
-    <text x="95" y="18" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#0b4772">Browse repositories</text>
-  </g>
-</a>
-<text x="52" y="782" class="term term-blue"><tspan>user@win7:~$ </tspan><tspan class="cursor">▋</tspan></text>
+  <rect x="42" y="686" width="636" height="76" fill="#f0f0f0" stroke="#000000" stroke-opacity="0.7"/>
+  <path d="M43 687h634" stroke="#ffffff" stroke-opacity="0.6"/>
+  <path d="M43 725h634" stroke="#cfcfcf"/>
+  <text x="52" y="710" class="ui-muted">C:\Users\Leonel\portfolio&gt; echo "keep building"</text>
+  <text x="52" y="746" class="ui">Ready</text>
+  <text x="668" y="746" text-anchor="end" class="ui-muted">9 public projects · 7.css palette · human-powered</text>
+  <rect x="652" y="699" width="8" height="8" rx="1" fill="#3c7fb1" stroke="#000000" stroke-opacity="0.35"/>
 </svg>
