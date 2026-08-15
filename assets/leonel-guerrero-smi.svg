@@ -14,6 +14,8 @@
   .fade { opacity: 0; animation: appear 0.01s linear var(--t) forwards; }
   .float { animation: drift var(--d) ease-in-out var(--t) infinite alternate; transform-box: fill-box; transform-origin: center; }
   .shimmer { animation: shine 5s ease-in-out infinite; }
+  .water-line { animation: water 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .sun { animation: sun 4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
   .hero-link-card, .project-cloud-link, .portfolio-link { transition: transform 220ms ease, filter 220ms ease; transform-box: fill-box; transform-origin: center; }
   a:hover .hero-link-card, a:focus .hero-link-card, a:hover .project-cloud-link, a:focus .project-cloud-link, a:hover .portfolio-link, a:focus .portfolio-link { transform: translateY(-3px); filter: url(#aero-glow); }
   @keyframes appear { to { opacity: 1; } }
