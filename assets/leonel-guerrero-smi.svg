@@ -154,7 +154,7 @@
   <text x="570" y="603" class="ui-muted">connected</text>
 
   <!-- 7.css button gradients; these links are the interactive part of the SVG. -->
-  <a href="https://www.leonelmantis.dev" aria-label="Open portfolio">
+  <a href="https://www.lemonmantis.dev" aria-label="Open portfolio">
     <rect class="w7-button-rect" x="42" y="638" width="154" height="30" rx="3" fill="url(#w7-button)" stroke="#8e8f8f"/>
     <rect x="43" y="639" width="152" height="28" rx="2" fill="none" stroke="#ffffff" stroke-opacity="0.75"/>
     <text x="119" y="657" text-anchor="middle" class="w7-button-label">Open portfolio</text>
